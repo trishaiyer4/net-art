@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/answers_style.css">
+
+</head>  
+<body>
+
+<!-- Header and Description for whole game -->
+<h1>How Good of a Salesperson are You?</h1>
+<p class = "description">In this questionnaire, you will be asked to put yourself in the shoes of a salesperson, trying to promote a product, opinion, or campaign. Test your marketing skills!</p>
+
+<br>
+<br>
+
+<!-- Creating the survey questions -->
+<div class = "questionnaire">
+    <!-- Question 1 Images, Text, and hidden answers/explanation -->
+    <div class = "questionnaire-item"><img src="images/shampoo.jpg" alt="shampoo"></div>
+    <div class = "questionnaire-item">
+    <p id="Q1">
+        <b>Choose which shampoo to sell:</b>
+    </p>
+
+    <!--Hidden explanation -->
+    <p hidden>
+        This shows the power of framing. We are more likely to choose something that is framed positively versus something that is framed negatively. The correct answer shows what the shampoo can do, which is a positive frame. The other response shows what the shampoo cannot do, which is a negative frame. However, the information is the same and the two shampoos are promising the same thing. The problem is that we are more likely to choose the positively-framed shampoo based on the way it's advertised, so we may lose out on other products. Alternatively, framing may help us find a good product.
+    </p>
+
+    <!--Hidden answers -->
+    <p hidden>
+        <span>Shampoo 1 promises to give you healthy hair and reduce hair damage by 90%. </span>
+        <br> Shampoo 2 promises to give you healthy hair and keep only 10% of hair damage. 
+    </p>
+
+    <input type="radio" id="Q1_A1" name="Q1" onclick="myFunction(this)">
+    <label for="Q1_A1">
+        Shampoo 1 promises to give you healthy hair and reduce hair damage by 90%.
+    </label>
+    <br>
+    <input type="radio" id="Q1_A2" name="Q1" onclick="myFunction(this)">
+    <label for="Q1_A2">
+        Shampoo 2 promises to give you healthy hair and keep only 10% of hair damage. 
+    </label>
+    <br>
+    </div>
+
+    <!-- Question 2 Images, Text, and hidden answers/explanation -->
+    <div class = "questionnaire-item"><img src="images/medication.jpg" alt="medication"></div>
+    <div class = "questionnaire-item">
+    <p id="Q2">
+        <b>Choose how to market a medication:</b>
+    </p>
+
+    <p hidden>
+        Again, the two advertising options have essentially the same information. However, we place more importance on avoiding losses, so we favor the option that only points out the gains. With medication, however, this could be really dangerous because people could choose a less effective brand of medication, depending on how it's framed. 
+    </p>
+
+    <p hidden>
+       <span>This medication will heal 100 people.</span> 
+        <br>This medication has 1/4 of chance of healing 400 people and 3/4 of a chance of not helping anyone.  
+    </p>
+
+    <input type="radio" id="Q2_A1" name="Q2" onclick="myFunction(this)">
+    <label for="Q2_A1">
+        This medication will heal 100 people.
+    </label>
+    <br>
+    <input type="radio" id="Q2_A2" name="Q2" onclick="myFunction(this)">
+    <label for="Q2_A2">
+        This medication has 1/4 of chance of healing 400 people and 3/4 of a chance of not helping anyone.
+    </label>
+    <br>
+    </div>
+
+
+    <!-- Question 3 Images, Text, and hidden answers/explanation -->
+    <div class = "questionnaire-item"><img src="images/clothing.jpg" alt="clothing"></div>
+    <div class = "questionnaire-item">
+    <p id="Q3">
+        <b>You are trying to sell products for an eco-friendly brand of clothing. Choose how to market one of their dresses:</b>
+    </p>
+    <p hidden>
+        Both are selling the clothes for $20. However, we place value on products based on how high they're priced. So, a $30 item that is on sale for $10 seems like a better deal than a $20 item, even if the product it exactly the same. In the case of this eco-friendly clothing company, framing can be helpful in selling their products, which in turn can be beneficial to the environment. 
+    </p>
+    <p hidden>
+        <span>Support the environment and wear great clothes! The original price was $30, but we have a limited time discount of $10 off!</span>
+        <br>Support the environment and wear great clothes for only $20!
+    </p>
+    <input type="radio" id="Q3_A1" name="Q3" onclick="myFunction(this)">
+    <label for="Q3_A1">
+        Support the environment and wear great clothes for only $20!
+    </label>
+    <br>
+    <input type="radio" id="Q3_A2" name="Q3" onclick="myFunction(this)">
+    <label for="Q3_A2">
+        Support the environment and wear great clothes! The original price was $30, but we have a limited time discount of $10 off!
+    </label>
+    <br>
+    </div>
+
+    <!-- Question 4 Images, Text, and hidden answers/explanation -->
+    <div class = "questionnaire-item"><img src="images/money.jpg" alt="clothing"></div>
+    <div class = "questionnaire-item">
+    <p id="Q4">
+        <b>You came up with a new game and are trying to get people to play. How should you market your game? </b>
+    </p>
+    <p hidden>
+        This has to do with relativity bias, where we compare our options to what is locally available. So, in our minds, 370 - 280 = $90 and 70 - 20 = $50, so the first option seems to be more profitable. When it comes to money, framing can cause losses because of biases like this. 
+    </p>
+    <p hidden>
+        <span>If you invest $300, you are equally likely to have $280 or $370 at the end of the game.</span>
+        <br>If you invest $300, you are equally likely to lose $20 or gain $70 at the end of the game.
+    </p>
+
+    <input type="radio" id="Q4_A1" name="Q4" onclick="myFunction(this)">
+    <label for="Q4_A1">
+        If you invest $300, you are equally likely to have $280 or $370 at the end of the game.
+    </label>
+    <br>
+    <input type="radio" id="Q4_A2" name="Q4" onclick="myFunction(this)">
+    <label for="Q4_A2">
+        If you invest $300, you are equally likely to lose $20 or gain $70 at the end of the game.
+    </label>
+    <br>
+    </div>
+
+    <!-- Question 5 Images, Text, and hidden answers/explanation -->
+    <div class = "questionnaire-item"><img src="images/organ.jpg" alt="clothing"></div>
+    <div class = "questionnaire-item">
+    <p id="Q5">
+        <b>You want more people to become organ donors. Choose how to do this:</b>
+    </p>
+    <p hidden>
+        When action is required to change default settings, people are more likely to leave the default as is. So, if an organ donation is framed as an opt-out versus an opt-in, it's likely to be effective in creating more organ donors. It's an insidious framing trick, which can push people into becoming organ donors without too much thought. 
+    </p>
+    <p hidden>
+        <span>Set the default for organ donation as opt-out.</span>
+        <br>Set the default for organ donation as opt-in.
+    </p>
+    <input type="radio" id="Q5_A1" name="Q5" onclick="myFunction(this)">
+    <label for="Q5_A1">
+        Set the default for organ donation as opt-in.
+    </label>
+    <br>
+    <input type="radio" id="Q5_A2" name="Q5" onclick="myFunction(this)">
+    <label for="Q5_A2">
+        Set the default for organ donation as opt-out.
+    </label>
+    <br>
+    </div>
+
+    <!-- Question 6 Images, Text, and hidden answers/explanation -->
+    <div class = "questionnaire-item"><img src="images/skincare.jpg" alt="clothing"></div>
+    <div class = "questionnaire-item">
+    <p id="Q6">
+        <b>You are trying to promote a skincare brand. Choose how to advertise the brand:</b>
+    </p>
+    <p hidden>
+        When we are threatened, we are less likely to be open to a product. However, when we are given an opportunity, we are more likely to be interested in a product. In this instance, framing can be helpful in promoting skincare. However, it can also be harmful because it may support a bad skincare company.
+    </p>
+    <p hidden>
+        <span>Our products helps refresh and rejuvenate the skin! It only takes a few minutes to take care of your skin health.</span>
+        <br>If you don't use our products, you're more likely to have skin damage.
+    </p>
+    <input type="radio" id="Q6_A1" name="Q6" onclick="myFunction(this)">
+    <label for="Q6_A1">
+        If you don't use our products, you're more likely to have skin damage.
+    </label>
+    <br>
+    <input type="radio" id="Q6_A2" name="Q6" onclick="myFunction(this)">
+    <label for="Q6_A2">
+        Our products helps refresh and rejuvenate the skin! It only takes a few minutes to take care of your skin health.
+    </label>
+    <br>
+    </div>
+</div>
+
+
+<br>
+<br>
+<br>
+
+<!--showing the answers by pressing submit -->
+<button id="submit" onclick="showSubmission()">Submit</button>
+
+<br>
+<br>
+<br>
+<br>
+
+<!--Hidden framing explanation which is revealed when submit is pressed. -->
+<div hidden class = "framing" id = "framing">
+    <h2>Framing</h2>
+    <p>This is when an individual's decisions are affected by the presentation or wording of information more than the actual content. All of these questions were actually examples of framing. The point of this is to show how people and companies use framing to promote themselves.</p>
+</div>
+
+
+
+<br>
+<p id="submission">
+
+</p>
+
+<br>
+<br>
+
+<!-- Hidden next button which is revealed when submit is pressed. -->
+<div hidden id = "next">
+    <button id="go_on" onclick="nextPage()">Next</button>
+</div>
+<br>
+<br>
+<br>
+
+<script>
+    //finding your answer, the correct answer, and the explanation for any of the questions
+    function myFunction(element) {
+        var parent = element.parentNode;
+        var firstPara = parent.firstElementChild;
+        var question = '<b>'+firstPara.textContent+'</b>';
+        var expPara = firstPara.nextElementSibling;
+        var explanation = '<b>Explanation: </b>' + expPara.textContent;
+        var correctAnsPara = expPara.nextElementSibling;
+        var correctAnswer = '<b>Best Answer: </b>'+correctAnsPara.innerHTML;
+        var answer = '<b>Your Answer: </b>'+element.nextElementSibling.textContent;
+
+        
+        //using a key, value pair to store the answers and explanation
+        sessionStorage.setItem(firstPara.id, question+'|'+answer+'|'+correctAnswer+'|'+explanation);
+
+    }
+
+    //show answers through a grid
+    function showSubmission() {
+        //localStorage.clear();
+        var submission = document.getElementById('submission');
+        var qa = '<div class="grid-container">';
+        var keys = Object.keys(sessionStorage).sort();
+        keys.forEach((key, index) =>  {
+            ansExpl = sessionStorage[key];
+            ansExplArray = ansExpl.split('|');
+            qa += '<div class="grid-item-question">' + ansExplArray[0] + '</div>';
+            qa += '<div class="grid-item">' + ansExplArray[1]+'<br>'+ansExplArray[2] + '</div>';
+            qa += '<div class="grid-item">' + ansExplArray[3] + '</div>';
+           
+        });
+
+        //making sure that submit doesn't show anything before buttons are clicked
+        qa += '</div>';
+        if (keys.length == 0) {
+            qa = '';
+        }
+        submission.innerHTML = qa;
+
+        //showing hidden elements
+        if(keys.length != 0){
+            var x = document.getElementById('next');
+            x.style.display = "block";
+            var framing = document.getElementById('framing');
+            framing.style.display = "block";
+
+        }
+
+    }
+
+    //go to next page
+    function nextPage(){
+        window.location.href = "page2.html";
+    }
+
+</script>
+
+</body>
+</html>

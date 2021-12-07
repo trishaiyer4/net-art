@@ -1,0 +1,13 @@
+body{
+	background-color: #b1d989;
+}
+div{
+	width: 700px;
+	margin: auto;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+}
+
+span {
+	font-style:  italic;
+}

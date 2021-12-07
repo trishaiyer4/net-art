@@ -1,0 +1,119 @@
+
+body{
+	background-color: #b1d989;
+}
+
+h1{
+	text-align: center;
+}
+
+span{
+	text-decoration: underline;
+	color: #369c50;
+}
+
+/*Styling for description at the top*/
+.description{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+
+}
+
+/*Styling for the questionnaire whole grid*/
+.questionnaire {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+  width: 75%;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+/*Styling for the questionnaire grid item*/
+.questionnaire-item{
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: left;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+/*Styling for the framing text*/
+.framing{
+	text-align: center;
+	width: 600px;
+	margin: auto;
+}
+
+/*Styling for the answer key whole grid*/
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 20px;
+	margin: 20px;
+	width: 75%;
+	margin: auto;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+/*Styling for the answer key grid item headers*/
+.grid-item-question {
+	grid-column:  1 / span 2;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+/*Styling for the answer key grid item paragraphs*/
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 18px;
+	text-align: left;
+	margin-bottom: 30px;
+	white-space: pre-line;
+}
+
+/*Styling for buttons, inspired by W3 schools*/
+button{
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: #4CAF50; 
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+  
+}
+
+/*Styling for images*/
+img {
+	width: 550px;
+	height: auto;
+}
+
+/*Radio button positioning*/
+input[type=radio] {
+    float: left;
+}
+
+/*Aligning radio button text*/
+label {
+    margin-left: 30px;
+    display: block;
+}
